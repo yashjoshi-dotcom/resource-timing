@@ -6,7 +6,7 @@ Proposal to add a new field, `resourceID` to PerformanceResourceTiming. This  [D
 
 When collecting Real User Monitoring (RUM) data about resources, understanding the relationships between resources and identifying their initiator resources that trigger fetches is crucial. This knowledge enables RUM providers to analyze and optimize resource loading, such as identifying critical resources for the Largest Contentful Paint (LCP) element or identifying 3rd-party scripts that load additional scripts.
 
-The FetchID attribute serves as a unique identifier associated with each resource fetch. By introducing the FetchID attribute, a solid foundation is established for the initiator attribute, enabling clear connections between resources and their initiators. This allows for tracing the hierarchy of fetches and determining parent-child relationships among resources, enabling the construction of a comprehensive dependency tree. 
+The ResourceID attribute serves as a unique identifier associated with each resource fetch. By introducing the ResourceID attribute, a solid foundation is established for the initiator attribute, enabling clear connections between resources and their initiators. This allows for tracing the hierarchy of fetches and determining parent-child relationships among resources, enabling the construction of a comprehensive dependency tree. 
 
 Am accurate dependency tree can open a lot of interesting possiblities on optimization front which have been discussed in depth in the issue referenced below.
 

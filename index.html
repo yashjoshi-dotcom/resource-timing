@@ -376,6 +376,7 @@
               readonly attribute unsigned short responseStatus;
               readonly attribute RenderBlockingStatusType renderBlockingStatus;
               readonly attribute DOMString contentType;
+              readonly attribute DOMString resourceID;
               [Default] object toJSON();
           };
         </pre>
@@ -769,6 +770,12 @@
           <a>this</a>'s <a data-for="PerformanceResourceTiming">timing
           info</a>'s [=fetch timing info/render-blocking=] is true; otherwise
           <a data-link-for="RenderBlockingStatusType">non-blocking</a>.
+        </p>
+        <p data-dfn-for="PerformanceResourceTiming">
+          The <dfn>resourceID</dfn> getter steps are to return
+          <a>this</a>'s <a data-for=
+          "PerformanceResourceTiming">timing info</a>'s [=fetch timing info=] resourceID.
+        </p>
         </p>
         <p class='note'>
           A user agent implementing <a>PerformanceResourceTiming</a> would need
